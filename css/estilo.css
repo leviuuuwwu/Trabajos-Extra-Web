@@ -14,6 +14,10 @@
     width: 10%;
 }
 
+.activo {
+    background: rgba(18,72,140,255);
+}
+
 /*ESTILOS NAV*/
 
 nav {
@@ -32,10 +36,6 @@ nav ul li a {
     display: block;
     padding: 0% 2.5em;
     text-decoration: none;
-}
-
-nav ul li a:hover {
-    background: rgba(18,72,140,255);
 }
 
 nav>ul {
@@ -61,7 +61,7 @@ nav>ul>li>ul>li {
 	white-space: nowrap;
 }
 
-/* FIN ESTILOS NAV CAMBIOS NECESARIOS A LA CLASE ACTIVO */
+/* FIN ESTILOS NAV */
 
 /* ESTILOS SLIDER PENDIENTE*/
 .contenedor-slider img {
@@ -71,12 +71,13 @@ nav>ul>li>ul>li {
 	border-top: 2px solid rgba(18,72,140,255);
 }
 
-/*ESTILOS PRIMER PARRÁFO PROBLEMAS CON "VER OFERTAS"*/
+/*ESTILOS PRIMER PARRÁFO */
 
 .intro{
 	background-color: #184c8c;
 	width: 100%;
 	color: white;
+    padding-bottom: 45px;
 }
 
 .class{
@@ -84,27 +85,87 @@ nav>ul>li>ul>li {
 }
 
 .intro h1>a{
-    font-size: 300%;
-    margin-bottom: 1em;
+    font-size: 250%;
 	color: white;
 	text-decoration: none;
 }
 
 h1{
 	text-align: center;
-	margin-bottom:  30px;
 	padding-top: 30px;
+    padding-bottom: 25px;
 }
 
 .intro p {
-    margin: 5%;
     text-align: left;
     line-height: 1.5;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+span {
+    display: flex;
+    justify-content: center;
 }
 
 .boton {
-    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #00315e;
+    color: white;
     text-decoration: none;
-    color: #11335c;
+    text-transform: uppercase;
 }
 
+/* FIN ESTILOS PRIMER PÁRRAFO */
+
+/* INICIO ESTILOS 3 CUADROS */
+
+.grid {
+    margin-top: 50px;
+    width: 23%;
+    margin-left: 5%;
+    background-color: white;
+    text-align: justify;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5%;
+
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 15px;
+    display: inline;
+}
+
+.grid h3 {
+    font-size: 1.8em;
+    color: #00315e;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+
+.grid p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.botoncito {
+    display: block; 
+    margin: 20px auto 0 auto; 
+    padding: 10px 20px;
+    background-color: #003366;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 100px;
+}

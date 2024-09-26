@@ -24,14 +24,73 @@
 	</header>
 	<section>
 		<article class="ofertas">
-			<div class="envoltorio">
-				<p>COLOCAR AQUI EL FORMULARIO DE APLICACION</p>
+			<div class="envoltorioo">
+				<h3>Aplicación a Ofertas de Empleo</h3>
+				<form action="aplicar.php" method="post">
+					<label>Nombre:</label>
+					<input type="text" name="nombre" required>
+			
+					<label for="apellidos">Apellidos:</label>
+					<input type="text" name="apellidos" required>
+			
+					<label for="carnet">Carnet:</label>
+					<input type="text" name="carnet" required>
+			
+					<label>Departamento de residencia:</label>
+					<select name="departamento" required>
+						<option value="">Selecciona tu departamento</option>
+						<option value="Ahuachapán">Ahuachapán</option>
+						<option value="Cabañas">Cabañas</option>
+						<option value="Chalatenango">Chalatenango</option>
+						<option value="Cuscatlán">Cuscatlán</option>
+						<option value="La Libertad">La Libertad</option>
+						<option value="La Paz">La Paz</option>
+						<option value="La Unión">La Unión</option>
+						<option value="Morazán">Morazán</option>
+						<option value="San Miguel">San Miguel</option>
+						<option value="San Salvador">San Salvador</option>
+						<option value="San Vicente">San Vicente</option>
+						<option value="Santa Ana">Santa Ana</option>
+						<option value="Sonsonate">Sonsonate</option>
+						<option value="Usulután">Usulután</option>
+					</select>
+			
+					<label>Edad:</label>
+					<input type="number" name="edad" min="18" required>
+			
+					<label>Género:</label>
+					<div class="genero">
+						<label><input type="radio" name="genero" value="Masculino" required> Masculino</label>
+						<label><input type="radio" name="genero" value="Femenino" required> Femenino</label>
+						<label><input type="radio" name="genero" value="Otro" required> Otro</label>
+					</div>
+			
+					<label>Fecha de Nacimiento:</label>
+					<input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+			
+					<label>Número de Teléfono:</label>
+					<input type="tel" name="telefono" pattern="[0-9]{4}[0-9]{4}" placeholder="0000-0000" required>
+			
+					<label>Carrera:</label>
+					<select name="carrera" required>
+						<option value="">Selecciona tu carrera</option>
+						<option value="Ingeniería de Software y Negocios Digitales">Ingeniería de Software y Negocios Digitales</option>
+						<option value="Ingeniería de Negocios">Ingeniería de Negocios</option>
+						<option value="Licenciatura en Economía y Negocios">Licenciatura en Economía y Negocios</option>
+						<option value="Licenciatura en Ciencias Jurídicas">Licenciatura en Ciencias Jurídicas</option>
+					</select>
+			
+					<label for="pretension_salarial">Pretensión salarial:</label>
+					<input type="number" name="pretension_salarial" min="365.00" required>
+			
+					<input type="submit" value="Aplicar">
+				</form>
 			</div>
 		</article>
 		
 	</section>
 	<footer>
-		<p>Creado por: Colocar su nombre y numero de carnet</p>
+		<p>Creado por: Leví Guerra 20235838</p>
 	</footer>
 </body>
 </html>
